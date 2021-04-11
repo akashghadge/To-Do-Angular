@@ -1,9 +1,10 @@
 # ToDo
 This app is made up with Angular framework of javascript.
-This is First Angular which i made for explor new tech.
+This is First Angular app which i made for explore new tech from this app i also learn about TypeScript.
 Description : In this app you can add to do thing so you need to worry if you forget about it app will store data to localstorage.
 Tech :
 Angular
+TypeScript
 CSS
 HTML
 Angular's built-in directives
