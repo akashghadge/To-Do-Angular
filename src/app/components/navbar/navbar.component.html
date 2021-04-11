@@ -1,0 +1,10 @@
+<div id="navBar">
+  <div id="menuDiv">
+    <img src="../../../favicon.ico" style="cursor: pointer;" alt="logo" id="menuButton" (click)="openNav()">
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a (click)="closeNav()" style="cursor: pointer;">&times;</a>
+    <a routerLink="/" (click)="closeNav()">Home</a>
+    <a routerLink="/about" (click)="closeNav()">About</a>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="parent">
+  <div class="centerDiv">
+    <div *ngFor="let todo of todos">
+      <div class="todoDiv">
+        <app-todo-base [todo]="todo" (ToDoDelete)="deleteNote($event)"></app-todo-base>
+      </div>
+    </div>
+  </div>
+</div>

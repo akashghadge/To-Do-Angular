@@ -1,0 +1,18 @@
+.parent {
+  margin-top: 20px;
+}
+
+.centerDiv {
+  display: flex;
+  width: 100%;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.centerDiv::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.todoDiv:hover {
+  transform: scale(1.1);
+}

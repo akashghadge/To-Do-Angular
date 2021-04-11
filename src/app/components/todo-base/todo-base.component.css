@@ -1,0 +1,50 @@
+.todoBase {
+  font-family: 'Times New Roman', Times, serif;
+  width: 15vw;
+  height: 20vh;
+  background-color: rgba(207, 207, 207, 0.411);
+  padding: 10px;
+  margin: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  /* padding: 1rem; */
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 10px 0px black;
+  overflow-x: scroll;
+  overflow-y: auto;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.todoBase::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.deleteTodo {
+  margin-top: 0.5rem;
+  position: relative;
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  outline: none;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.deleteTodo:hover {
+  background-color: red;
+}
+
+@media (max-width:700px) {
+  .todoBase {
+    margin: 1rem;
+    width: 50vw;
+    height: 25vh;
+  }
+}

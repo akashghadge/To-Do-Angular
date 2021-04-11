@@ -1,0 +1,7 @@
+<app-input-todo (addNote)="finalAdd($event)"></app-input-todo>
+<div *ngIf="this.todos.length==0; else elseblock">
+  <h1 style="text-align: center; margin-top: 20px;">No Todo's are available</h1>
+</div>
+<ng-template #elseblock>
+  <app-display-todo [todos]="todos" (deleteEvent)="finalDelete($event)"></app-display-todo>
+</ng-template>

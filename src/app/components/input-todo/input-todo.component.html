@@ -1,0 +1,13 @@
+<div class="formDiv">
+  <div class="mainForm">
+    <form (ngSubmit)="OnSubmit()">
+      <label class="labelForm" for="titel">Title : </label>
+      <input class="inputForm" [(ngModel)]="title" type="text" name="title" id="titleInput">
+      <br>
+      <span class="labelForm" for="desc">Description : </span>
+      <input class="inputForm" [(ngModel)]="desc" type=" text" name="desc" id="descInput">
+      <br>
+      <button type="submit" id="submitButton">Submit</button>
+    </form>
+  </div>
+</div>
