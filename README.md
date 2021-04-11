@@ -1,4 +1,16 @@
 # ToDo
+This app is made up with Angular framework of javascript.
+This is First Angular which i made for explor new tech.
+Description : In this app you can add to do thing so you need to worry if you forget about it app will store data to localstorage.
+Tech :
+Angular
+CSS
+HTML
+Angular's built-in directives
+
+Hosted At :
+https://to-do-angular-akash.netlify.app/
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
