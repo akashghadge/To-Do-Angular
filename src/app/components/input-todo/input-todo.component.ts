@@ -11,19 +11,24 @@ import { Model } from '../Model';
 export class InputTodoComponent implements OnInit {
   title: string;
   desc: string;
-  constructor() { }
+  constructor() {
+    this.title = "";
+    this.desc = "";
+  }
   @Output() addNote: EventEmitter<Model> = new EventEmitter();
   ngOnInit(): void {
   }
   OnSubmit() {
-    const todo = {
-      sr_no: 1,
-      title: this.title,
-      desc: this.desc,
-      active: true
+    if (!(this.title == "" && this.desc == "")) {
+      const todo = {
+        sr_no: 1,
+        title: this.title,
+        desc: this.desc,
+        active: true
+      }
+      this.addNote.emit(todo);
+      this.title = "";
+      this.desc = "";
     }
-    this.addNote.emit(todo);
-    this.title = "";
-    this.desc = "";
   }
 }
